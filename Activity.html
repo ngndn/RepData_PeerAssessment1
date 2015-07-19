@@ -290,6 +290,9 @@ summary(total_steps_per_day$total_steps)
 ##       0    6778   10400    9354   12810   21190
 </code></pre>
 
+<p>Mean: <code>9354</code><br/>
+Median: <code>10400</code></p>
+
 <h2>What is the average daily activity pattern?</h2>
 
 <h3>1. Time series plot: average number of steps and 5-minute intervals</h3>
@@ -438,6 +441,9 @@ summary(total_steps_per_day$total_steps)
 ##       0    6778   10400    9354   12810   21190
 </code></pre>
 
+<p>Mean: <code>9354</code><br/>
+Median: <code>10400</code></p>
+
 <p>The mean and the median of the filled total steps taken per day</p>
 
 <pre><code class="r"># Filled missing values dataset
@@ -447,6 +453,9 @@ summary(total_steps_per_day_filled$total_steps)
 <pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 ##      41    6778   10400    9504   12810   21190
 </code></pre>
+
+<p>Mean: <code>9504</code><br/>
+Median: <code>10400</code></p>
 
 <p>Compare to the original total steps data, these new values does not differ much. The median for both data set is the same. The mean of the new data set is larger than the original but not much. And as we can see, the two histograms is almost identical.
 Therefore, imputing missing data does not have much impact on the estimates of the total daily number of steps.</p>

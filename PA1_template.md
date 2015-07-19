@@ -16,22 +16,7 @@ First we need to load the data. We will use dplyr packages to help manipulate th
 ```r
 # Import
 library(dplyr)
-```
 
-```
-## 
-## Attaching package: 'dplyr'
-## 
-## The following objects are masked from 'package:stats':
-## 
-##     filter, lag
-## 
-## The following objects are masked from 'package:base':
-## 
-##     intersect, setdiff, setequal, union
-```
-
-```r
 # Convert to dplyr data frame
 activity = tbl_df(read.csv("activity.csv"))
 ```
@@ -113,7 +98,8 @@ summary(total_steps_per_day$total_steps)
 ##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 ##       0    6778   10400    9354   12810   21190
 ```
-
+Mean: `9354`  
+Median: `10400`
 
 ## What is the average daily activity pattern?
 ### 1. Time series plot: average number of steps and 5-minute intervals
@@ -267,6 +253,8 @@ summary(total_steps_per_day$total_steps)
 ##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 ##       0    6778   10400    9354   12810   21190
 ```
+Mean: `9354`  
+Median: `10400`
 
 The mean and the median of the filled total steps taken per day
 
@@ -279,6 +267,8 @@ summary(total_steps_per_day_filled$total_steps)
 ##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 ##      41    6778   10400    9504   12810   21190
 ```
+Mean: `9504`  
+Median: `10400`
 
 Compare to the original total steps data, these new values does not differ much. The median for both data set is the same. The mean of the new data set is larger than the original but not much. And as we can see, the two histograms is almost identical.
 Therefore, imputing missing data does not have much impact on the estimates of the total daily number of steps.
