@@ -363,7 +363,7 @@ median_steps_interval = summarise(by_interval, median_steps = median(steps, na.r
 
 <h3>3. Create a new dataset</h3>
 
-<p>Then we will use this information to fill the missing values in the original dataset</p>
+<p>We will use the information above to fill the missing values in the original dataset</p>
 
 <pre><code class="r"># First find all the 5-minute interval that has missing data
 missing_interval = activity[is.na(activity$steps), &quot;interval&quot;]
