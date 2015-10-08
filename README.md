@@ -1,3 +1,9 @@
+## From the student
+I have done this assignment several months ago, but I did not compete the course since I was busy back then. Therefore you may see the second last commit was serveral months ago.
+
+Original text below.
+
+
 ## Introduction
 
 It is now possible to collect a large amount of data about personal
